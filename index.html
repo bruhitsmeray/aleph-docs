@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>documentation</title>
+        <link rel="icon" href="assets/logo.png">
+
+        <link rel="stylesheet" href="./styles/navbar.css">
+        <link rel="stylesheet" href="./styles/sidebar.css">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/post.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <a href="https://dev-whiteex.github.io/" class="logo">whiteex</a>
+                <nav>
+                    <ul>
+                        <li><a href="https://dev-whiteex.github.io/blog/" class="basic" target="_blank">Blog</a></li>
+                        <li><a href="https://linktr.ee/whiteex" class="basic" target="_blank">Linktree</a></li>
+                        <li><a href="https://github.com/dev-whiteex" class="special" target="_blank">GitHub</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div>
+                <nav id="sidebar">
+                    <div class="side-content">
+                        <ul class="nav-links">
+                            <li><a href="#Intro">Introduction</a></li>
+                            <li><a href="#Instance">Game Instance</a></li>
+                            <li><a href="#HUD">HUD</a></li>
+                            <li><a href="#Notifications">Notifications</a></li>
+                            <li><a href="#Tasks">Tasks</a></li>
+                            <li><a href="#Subtitles">Subtitles</a></li>
+                            <li><a href="#XPSystem">XP System</a></li>
+                            <li><a href="#VitalX">Health & Energy</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <main id="main-doc">
+                <section id="Intro">
+                    <h2>Introduction</h2>
+                    <h3>Welcome</h3>
+                    <article>
+                        <p>Aleph is a learning project, also used to develop plugins, originally based on Unreal Engine 4.26. Aleph is packed with C++ code and Blueprints
+                          to help you kickstart your game project.
+                        </p>
+                        <br><p>This documentation represents Aleph & it's plugins as they function on the current build based on Unreal Engine 5.0.1!</p>
+                    </article>
+                </section>
+
+                <section id="Instance">
+                  <h2>Game Instance</h2>
+                  <article>
+                        <p>These are some of the vars available in the current version of Aleph:</p>
+                        <code>
+                            <p>// Gameplay</p>
+                            <p>bool bAllowDebug;</p>
+                            <p>bool bAllowExtraMov = true;</p>
+                            <p>bool bAllowAbilities = true;</p>
+                            <p>bool bAllowExchange = true;</p>
+
+                            <br>
+                            <p>// Game-specific vars (currently missing)</p>
+                            <p>bool bUseTasks = true;</p>
+                            <p>bool bUseXP = true;</p>
+    
+                            <br>
+                            <p>// Settings</p>
+                            <p>bool bToggleCrouch = false;</p>
+                            <p>bool bToggleSprint = false;</p>
+                            <p>bool bToggleInteract = false;</p>
+    
+                            <br>
+                            <p>// Other</p>
+                            <p>bool bUseDevMode = true;</p>
+                        </code>
+                  </article>
+                </section>
+
+                <section id="HUD">
+                    <h2>HUD</h2>
+                    <article>
+                        <p>These are the HUD skins available right now in Aleph:</p>
+                        <code>
+                            <p>Off</p>
+                            <p>Default</p>
+                        </code>
+                    </article>
+                </section>
+
+                <section id="Notifications">
+                    <h2>Notifications (Missing)</h2>
+                    <article>
+                        <p>Article not available.</p>
+                    </article>
+                </section>
+  
+                <section id="Tasks">
+                    <h2>Tasks (Missing)</h2>
+                    <article>
+                        <p>Article not available.</p>
+                    </article>
+                </section>
+  
+                <section id="Subtitles">
+                    <h2>Subtitles</h2>
+                    <article>
+                        <p>
+                          Aleph uses the SubX plugin to display the subtitles. All you have to do to use it is call the "PlaySubtitles"
+                          in any blueprints that you'd like to play the subtitle and that's it.
+                        </p>
+                        <br><p>
+                          Please make sure that the Subtitle widget is added to your hud before Playing the subtitle.
+                        </p>
+                    </article>
+                </section>
+    
+                <section id="XPSystem">
+                    <h2>XP System (Missing)</h2>
+                    <article>
+                        <p>
+                          The XP system has 4 simple variables. Here are the variables along with their default values.
+                        </p>
+                        <br>
+                        <p>
+                          Please note that the XP system is not yet available in any of the released versions of Aleph be it on GameJolt or GitHub.
+                        </p>
+                      <code>
+                          <p>int Level = 1;</p>
+                          <p>int CurrentXP = 0;</p>
+                          <p>int RequiredXP = 128;</p>
+                          <p>int XPMultiplier = 1.25;</p>
+                      </code>
+                    </article>
+                </section>
+    
+                <section id="VitalX">
+                    <h2>Health & Energy</h2>
+                    <article>
+                        <p>
+                          Aleph uses the VitalX plugin to handle the health and energy.
+                        </p>
+                    </article>
+                </section>
+            </main>
+        </div>
+        <script src="/scripts/dropdown.js"></script>
+    </body>
+</html>
